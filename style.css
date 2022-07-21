@@ -1,0 +1,138 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+h1{
+    text-align: center;
+    padding: 20px;
+}
+
+.color-name{
+    color: brown;
+    font-size: 100px;
+}
+
+.heading{
+    color: white;
+    text-transform: uppercase;
+    font-size: 48px;
+    text-shadow: 0 0 2px black;
+}
+
+.banner{
+    background-color: yellow;  
+}
+
+.options{
+    display: flex;
+    justify-content: space-around;
+    background-color: gray;
+    margin: 0 auto;
+}
+
+.status{
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+}
+
+button{
+    border: none;
+    padding: 10px;
+    background-color: gray;
+    color: white;
+    font-size: 20px;
+    text-transform:capitalize;
+}
+
+button:hover{
+    background-color: #333;
+    cursor: pointer;
+}
+
+.mainBox{
+    display: flex;
+    justify-content: center;
+}
+
+.box{
+    height: 150px;
+    width: 150px;
+    background-color: #333;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px black solid;
+}
+
+.box:hover{
+    cursor: pointer;
+    border: 3px black solid;
+    margin: 9px;
+}
+
+.box:active{
+    border: none;
+    margin: 12px;
+}
+
+@media screen and (max-width: 860px){
+    .color-name{
+        font-size: 60px;
+    }
+
+    .heading{
+        font-size: 36px;
+    }
+
+    .box{
+        height: 130px;
+        width: 130px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .color-name{
+        font-size: 36px;
+    }
+
+    .heading{
+        font-size: 26px;
+    }
+
+    button{
+        font-size: 16px;
+    }
+
+    .status{
+        font-size: 26px;
+        display: block;
+    }
+
+    .options{
+        display: block;
+        text-align: center;
+    }
+    .diff{
+        display: flex;
+    }
+
+    .diff button{
+        flex-grow: 1;
+    }
+
+    .reset button{
+        width: 100%;
+        border: 2px black solid;
+    }
+    
+    .box{
+        height: 80px;
+        width: 80px;
+    }
+
+}
